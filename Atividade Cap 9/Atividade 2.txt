@@ -1,0 +1,10 @@
+
+**Questões:**
+- O que acontece com a ordem das mensagens exibidas?
+As mensagens "Corrotina" e "Função normal" aparecem intercaladas no terminal. A ordem exata pode variar ligeiramente a cada execução, mas elas não aparecem em blocos sequenciais.
+
+- Por que as mensagens da corrotina e da função normal se intercalam?
+ A palavra-chave go inicia a função escrever("Corrotina") em uma corrotina (chamada de goroutine em Go), que executa de forma concorrente (quase em paralelo) com a função main. O main continua sua execução e chama escrever("Função normal"). O escalonador do Go alterna a execução entre as duas rotinas, permitindo que ambas progridam. A pausa (time.Sleep) em cada uma delas torna essa alternância mais visível.
+
+- Relacione esse comportamento com a definição de **corrotinas** estudada no Capítulo 9.
+ Este comportamento é a essência das corrotinas. Elas são subprogramas que podem ter sua execução suspensa (pelo time.Sleep ou outra operação de bloqueio) e retomada posteriormente, permitindo que outras rotinas executem nesse meio tempo. Diferente de uma chamada de função normal que bloqueia o chamador até terminar, a chamada com go permite que o chamador (main) continue imediatamente.

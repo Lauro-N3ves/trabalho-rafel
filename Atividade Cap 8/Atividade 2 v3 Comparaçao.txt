@@ -1,0 +1,1 @@
+Em Python é visivelmente mais simples e concisa. A sintaxe do if/elif/else é direta e não precisa de construções adicionais como o break do C. Além disso, a leitura de dados (input) e a formatação de strings em Python são mais simples que scanf e printf em C. Portanto, para um script de menu como este, Python é melhor por ter uma solução mais rápida e legível.

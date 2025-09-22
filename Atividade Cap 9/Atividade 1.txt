@@ -1,0 +1,10 @@
+**Questões:**
+- Qual a diferença observada entre as duas versões?
+ Na versão por valor, a variável numero original não é alterada. Na versão por referência, ela é
+
+- Por que o valor da variável só se altera na versão por referência?
+Porque na passagem por valor, a função recebe apenas uma cópia do dado. Qualquer alteração é feita na cópia, e o original fica intacto.
+Na passagem por referência, a função recebe o endereço do dado original, permitindo que ela o modifique diretamente.
+
+- Relacione essa diferença com as estratégias de passagem de parâmetros discutidas no Capítulo 9.
+A passagem por valor implementa o modo IN (apenas entrada), pois a função só recebe dados. A passagem por referência implementa o modo INOUT (entrada e saída), pois a função pode tanto ler o valor inicial quanto modificá-lo.

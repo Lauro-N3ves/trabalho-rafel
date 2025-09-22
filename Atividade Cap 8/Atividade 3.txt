@@ -1,0 +1,3 @@
+Implementar a mesma lógica com goto seria muito mais complexo e confuso. Precisaria criar múltiplos rótulos (ex: proximo_numero, parar_loop, fim_funçao) e usar goto para saltar entre eles. Isso tornaria o fluxo de controle difícil de seguir e a manutenção do código um pesadelo. As alternativas modernas (break, continue, return) são superiores porque são estruturadas e semânticas:
+break e continue têm um escopo bem definido (o loop atual), evitando saltos arbitrários.
+return deixa claro o ponto de saída de uma função.

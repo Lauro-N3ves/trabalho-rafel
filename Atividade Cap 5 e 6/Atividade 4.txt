@@ -1,0 +1,6 @@
+Perguntas para reflexão:
+• Qual a diferença entre um array e um registro/objeto?
+ Um array é uma coleção de elementos do mesmo tipo (homogêneo), acessados por um índice numérico. Um registro/struct/objeto é uma coleção de elementos de tipos diferentes (heterogêneo), onde cada elemento (campo ou atributo) é acessado por um nome.
+
+• Quando seria mais adequado usar array e quando usar struct/classe?
+devemos usar um array quando precisar armazenar uma lista de itens idênticos e processá-los em sequência - ex: uma lista de notas, uma série de medições de temperatura. Use struct/classe quando precisar modelar uma entidade do mundo real que possui múltiplas características diferentes - ex: um Livro com título, autor e ano; um Usuario com nome, email e senha

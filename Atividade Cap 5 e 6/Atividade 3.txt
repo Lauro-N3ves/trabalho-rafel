@@ -1,0 +1,6 @@
+Perguntas para reflexão:
+• Por que o Java não permite essa operação e o Python permite?
+ Java tem tipagem estática, onde o tipo de uma variável é fixado em tempo de compilação. Python tem tipagem dinâmica, onde o tipo de uma variável pode mudar em tempo de execução.
+
+• Quais as vantagens e desvantagens de cada abordagem?
+A abordagem de Java oferece segurança, detectando erros de tipo antes da execução. A desvantagem é a menor flexibilidade. A abordagem de Python oferece flexibilidade, mas a desvantagem é que erros de tipo só são descobertos em tempo de execução, o que pode ser um risco em sistemas grandes.
