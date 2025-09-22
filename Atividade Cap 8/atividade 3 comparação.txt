@@ -1,0 +1,4 @@
+3. Compare os três códigos (original com `goto`, versão com `while` e versão com `for`) e escreva um pequeno parágrafo discutindo qual forma é mais legível e por quê.
+
+O código original com goto é o menos legível. Ele força o leitor a saltar entre diferentes pontos do código (check e loop) para entender o fluxo, o que é confuso e com uma maior chance de erros
+A versão com while é muito mais clara, pois encapsula a lógica de repetição em um único bloco. Só que a versão com for é a mais legível para este caso específico, pois mostra diretamente a intenção de "executar um bloco de código para cada número de 1 a 10", abstraindo o controle manual da variável i.
